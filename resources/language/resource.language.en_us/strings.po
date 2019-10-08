@@ -14,20 +14,88 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgctxt "#30000"
-msgid "All episodes"
-msgstr ""
-
 msgctxt "#30001"
-msgid "Latest episodes"
+msgid "It's Going Down"
 msgstr ""
 
 msgctxt "#30002"
-msgid ""
+msgid "The Ex-Worker"
 msgstr ""
 
 msgctxt "#30003"
-msgid ""
+msgid "Hotwire"
+msgstr ""
+
+msgctxt "#30004"
+msgid "The Final Straw"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Radio Rustbelt"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Abolition Radio"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Resonance: An Anarchist Audio Distro"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Kite Line"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Rebel Beat Radio"
+msgstr ""
+
+msgctxt "#30010"
+msgid "A-Radio Berlin"
+msgstr ""
+
+msgctxt "#30011"
+msgid "subMedia"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Trouble"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Radical Underground"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Subversion 1312"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Dissident Island Radio"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Black & Green Podcast"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Radical People Podcast"
+msgstr ""
+
+msgctxt "#30018"
+msgid "Rebel Steps"
+msgstr ""
+
+msgctxt "#30019"
+msgid "From Embers"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Coffee With Comrades"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Red String & Maroons"
 msgstr ""
 
 # empty string with id 32003

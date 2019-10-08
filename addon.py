@@ -26,11 +26,6 @@ url21 = "https://www.spreaker.com/show/3233143/episodes/feed"
 def main_menu():
     items = [
         {
-            'label': plugin.get_string(30000),
-            'path': "https://hwcdn.libsyn.com/p/d/d/0/dd0254ee5218b7a3/57_-_FINAL_EDIT.m4a?c_id=52840580&cs_id=52840580&expiration=1570508466&hwt=5fdc348cbc4f4ff8e17aff47ed4bc280",
-            'thumbnail': "https://channelzeronetwork.com/wp-content/themes/channelzero/library/images/logo.jpg", 
-            'is_playable': True},
-        {
             'label': plugin.get_string(30001),
             'path': plugin.url_for('episodes1'),
             'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2019/05/igdlogo.jpg"},

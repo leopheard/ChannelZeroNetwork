@@ -1,6 +1,28 @@
 <a href="https://channelzeronetwork.com/">Channel Zero Network</a>.<br>
 
-<a href="kodi.tv">KODI<a> / XBMC / Firestick addon for the <a href="https://channelzeronetwork.com/">Channel Zero Network</a>.<br>
+<a href="kodi.tv">KODI<a> / XBMC / Firestick addon for the <a href="https://channelzeronetwork.com/">Channel Zero Network</a>:<br>
+
+- It's Going Down<br>
+- The Ex-Worker<br>
+- Hotwire<br>
+- The Final Straw<br>
+- Radio Rustbelt<br>
+- Abolition Radio<br>
+- Resonance: An Anarchist Audio Distro<br>
+- Kite Line<br>
+- Rebel Beat Radio<br>
+- A-Radio Berlin<br>
+- subMedia<br>
+- Trouble<br>
+- Radical Underground<br>
+- Subversion 1312<br>
+- Dissident Island Radio<br>
+- Black & Green Podcast<br>
+- Radical People Podcast<br>
+- Rebel Steps<br>
+- From Embers<br>
+- Coffee With Comrades<br>
+- Red String & Maroons<br>
 
 Channel Zero is an english-based anarchist radio/podcast network run by radical media makers. We are here to present anarchist analysis, context to deepen peoples understanding of the situation and broaden the struggle. We share stories from the front-lines, lessons from history, and battle-tested ideas to spread revolutionary practices.<br>
 

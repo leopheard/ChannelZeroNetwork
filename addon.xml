@@ -23,9 +23,27 @@
         	<assets>
 			<icon>resources/media/icon.jpg</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
-			<screenshot>resources/media/icon.jpg</screenshot>
-			<screenshot>resources/media/icon.jpg</screenshot>
-			<screenshot>resources/media/icon.jpg</screenshot>
+			<screenshot>resources/media/1.jpg</screenshot>
+			<screenshot>resources/media/2.jpg</screenshot>
+			<screenshot>resources/media/3.jpg</screenshot>
+			<screenshot>resources/media/4.jpg</screenshot>
+			<screenshot>resources/media/5.jpg</screenshot>
+			<screenshot>resources/media/6.jpg</screenshot>
+			<screenshot>resources/media/7.jpg</screenshot>
+			<screenshot>resources/media/8.jpg</screenshot>
+			<screenshot>resources/media/9.jpg</screenshot>
+			<screenshot>resources/media/10.jpg</screenshot>
+			<screenshot>resources/media/11.jpg</screenshot>
+			<screenshot>resources/media/12.jpg</screenshot>
+			<screenshot>resources/media/13.jpg</screenshot>
+			<screenshot>resources/media/14.jpg</screenshot>
+			<screenshot>resources/media/15.jpg</screenshot>
+			<screenshot>resources/media/16.jpg</screenshot>
+			<screenshot>resources/media/17.jpg</screenshot>
+			<screenshot>resources/media/18.jpg</screenshot>
+			<screenshot>resources/media/19.jpg</screenshot>
+			<screenshot>resources/media/20.jpg</screenshot>
+			<screenshot>resources/media/21.jpg</screenshot>
 		</assets>
   </extension>
 </addon>

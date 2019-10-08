@@ -117,12 +117,15 @@ def get_playable_podcast1(soup1):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2019/05/igdlogo.jpg",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2019/05/igdlogo.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -146,12 +149,15 @@ def get_playable_podcast2(soup2):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2019/03/newlogo-150x150.jpg",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2019/03/newlogo-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -175,12 +181,15 @@ def get_playable_podcast3(soup3):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/03/full-size1400px-150x150.jpg",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/03/full-size1400px-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -209,7 +218,8 @@ def get_playable_podcast4(soup4):
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://cloudfront.crimethinc.com/assets/podcast/hotwire-1/hotwire-1.jpg",
+#                'thumbnail': "https://cloudfront.crimethinc.com/assets/podcast/hotwire-1/hotwire-1.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -233,12 +243,15 @@ def get_playable_podcast5(soup5):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/07/tfsradio-150x150.jpg",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/07/tfsradio-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -262,12 +275,15 @@ def get_playable_podcast6(soup6):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/08/rar-150x150.png",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -291,12 +307,15 @@ def get_playable_podcast7(soup7):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/03/podcast-logo-copy-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -315,17 +334,19 @@ def get_playable_podcast8(soup8):
     subjects = []
     for content in soup8.find_all('item'):
         try:        
+            title = content.find('title')
+            title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
             link = content.find('enclosure')
             link = link.get('url')
             print("\n\nLink: ", link)
-            title = content.find('title')
-            title = title.get_text()
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -349,47 +370,21 @@ def get_playable_podcast9(soup9):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/03/rebel-beat-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
 def compile_playable_podcast9(playable_podcast9):
     items = []
     for podcast in playable_podcast9:
-        items.append({
-            'label': podcast['title'],
-            'thumbnail': podcast['thumbnail'],
-            'path': podcast['url'],
-            'is_playable': True,
-    })
-    return items
-
-def get_playable_podcast10(soup10):
-    subjects = []
-    for content in soup10.find_all('item'):
-        try:        
-            link = content.find('enclosure')
-            link = link.get('url')
-            print("\n\nLink: ", link)
-            title = content.find('title')
-            title = title.get_text()
-        except AttributeError:
-            continue
-        item = {
-                'url': link,
-                'title': title,
-                'thumbnail': "",
-        }
-        subjects.append(item) 
-    return subjects
-def compile_playable_podcast10(playable_podcast10):
-    items = []
-    for podcast in playable_podcast10:
         items.append({
             'label': podcast['title'],
             'thumbnail': podcast['thumbnail'],
@@ -407,12 +402,15 @@ def get_playable_podcast11(soup11):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2017/06/Itunes-Logo-1-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -436,12 +434,15 @@ def get_playable_podcast12(soup12):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://i0.wp.com/sub.media/wp-content/uploads/2017/05/trouble_podcast_logo.jpg?resize=150%2C150&ssl=1",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -465,12 +466,15 @@ def get_playable_podcast13(soup13):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/01/26229515_158476234793680_8757692315994236509_n.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjectS
@@ -494,12 +498,15 @@ def get_playable_podcast14(soup14):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/05/subversion1312.png",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -523,12 +530,15 @@ def get_playable_podcast15(soup15):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/01/Logo_large-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -552,12 +562,15 @@ def get_playable_podcast16(soup16):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/05/JPEG-Image-292-%C3%97-292-pixels.jpeg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -581,12 +594,15 @@ def get_playable_podcast17(soup17):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/06/itunesart.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -610,12 +626,15 @@ def get_playable_podcast18(soup18):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/10/480x270_201238-150x150.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -639,12 +658,15 @@ def get_playable_podcast19(soup19):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/11/fromembers.jpg",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
@@ -668,15 +690,17 @@ def get_playable_podcast20(soup20):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2019/03/Large-1-1024x1024.jpg",
+                'thumbnail': thumbnail,
         }
-        subjects.append(item) 
-
+        subjects.append(item)
     return subjects
 def compile_playable_podcast20(playable_podcast20):
     items = []
@@ -698,12 +722,15 @@ def get_playable_podcast21(soup21):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': "",
+#                'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2019/07/shit-2-150x150.png",
+                'thumbnail': thumbnail,
         }
         subjects.append(item) 
     return subjects
