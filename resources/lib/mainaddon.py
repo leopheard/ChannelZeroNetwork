@@ -315,11 +315,11 @@ def get_playable_podcast8(soup8):
     subjects = []
     for content in soup8.find_all('item'):
         try:        
-            title = content.find('title')
-            title = title.get_text()
             link = content.find('enclosure')
             link = link.get('url')
             print("\n\nLink: ", link)
+            title = content.find('title')
+            title = title.get_text()
         except AttributeError:
             continue
         item = {
@@ -444,7 +444,7 @@ def get_playable_podcast13(soup13):
                 'thumbnail': "https://channelzeronetwork.com/wp-content/uploads/2018/01/26229515_158476234793680_8757692315994236509_n.jpg",
         }
         subjects.append(item)
-    return subject
+    return subjects
 def compile_playable_podcast13(playable_podcast13):
     items = []
     for podcast in playable_podcast13:
@@ -474,7 +474,7 @@ def get_playable_podcast14(soup14):
                 'title': title,
                 'thumbnail': thumbnail,
         }
-        subjects.append(item) 
+        subjects.append(item)
     return subjects
 def compile_playable_podcast14(playable_podcast14):
     items = []
