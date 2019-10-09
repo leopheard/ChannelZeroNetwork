@@ -325,7 +325,7 @@ def get_playable_podcast8(soup8):
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': thumbnail,
+                'thumbnail': "http://wfhb.org/wp-content/uploads/2016/10/KiteLineLOGO_square-1.jpg",
         }
         subjects.append(item) 
     return subjects
